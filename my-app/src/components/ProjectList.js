@@ -17,8 +17,8 @@ ReactDOM.render(
         />
       }
       actions={[
-        <GithubOutlined key="" />,
-        <LinkOutlined key=""/>
+        <GithubOutlined key="github" href="https://github.com/RSimer" />,
+        <LinkOutlined key="link" href=""/>
       ]}
     >
       <Meta
@@ -29,3 +29,4 @@ ReactDOM.render(
     </Card>,
     
   );
+  export default ProjectList;
