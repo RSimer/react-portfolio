@@ -1,56 +1,57 @@
 import React from "react";
-import { ReactDOM } from "react";
+import "./App.css";
+
 import {
-  Route,
-  Switch,
+  BrowserRouter as Switch,
+  Route
+
 } from "react-router-dom";
 
 // Components required
 import {Sider} from "./components/Header";
-import {Project} from "./components/Project";
+// import {Project} from "./components/Project";
 import {Footer} from "./components/Footer";
 
 // different pages
 import {AboutMe} from "./components/AboutMe";
-import {Resume} from "./components/Resume";
-import {Contact} from "./components/Contact";
-import {ProjectList} from "./components/ProjectList";
+import { ProjectList } from "./components/ProjectList";
+// import {Resume} from "./components/Resume";
+// import {Contact} from "./components/Contact";
 
-function App(){
+
+ function App(){
     return(
-    <Router>
-
-      <div> 
-
+    // <Router>
+      <Switch>
+      <div className='container'> 
+        <div className='navigation'>
         <Sider/>
+        </div>
 
-        <Route path={["/","/about"]}>
+        <Route exact path={["/","/about"]}>
           <AboutMe/>
         </Route>
 
-        <Route path={"/projects"}>
-          <ProjectList/>
+        <Route exact path={"/projectList"}>
+          <div className="project">
+          <ProjectList style={{alignContent: 'center'}}/>
+          </div>
         </Route>
-
-        <Route path={"/resume"}>
-          <Resume/>
-        </Route>
-
-        <Route path={"/contact"}>
-          <Contact/>
-        </Route>
+        
+        
 
       
 
+        <div className='footer'>
         <Footer/>
-
+        </div>
+        
       </div>
-
-    </Router>
+  </Switch>
+    // </Router>
     );
 }
-
-
-
-
 export default App;
+
+
+
