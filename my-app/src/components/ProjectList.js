@@ -2,8 +2,15 @@
 import React from 'react';
 
 
-import { Card, Tag, Row, Col } from 'antd';
+import { Card, Row, Col } from 'antd';
 import {GithubOutlined,LinkOutlined} from '@ant-design/icons';
+
+
+// photo imports
+import p6 from './images/screenshot.png'
+import playlist from './images/home.PNG'
+import notes from './images/takin-notes.png'
+import fitness from './images/fitness-track.png'
 
 
 const { Meta } = Card;
@@ -16,14 +23,16 @@ export function ProjectList() {
   return (
     <>
     {/* put in grid responsiveness (on the right side of grid documentation) */}
-    <Row>
-      <Col md={{span: 8, offset:6}} lg={{span: 8, offset: 6}}>
+    <Row gutter={[16,24]}
+         style={{marginTop:50}} 
+    >
+      <Col xs={{span:12, offset:8}} sm={{span: 12, offset:6}}  >
         <Card
           style={{ backgroundColor: '#0388a6' }}
           cover={
             <img
               alt="example"
-              src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+              src={playlist}
             />
           }
           actions={[
@@ -43,33 +52,37 @@ export function ProjectList() {
           />
         </Card>
       </Col>
-        
+        </Row>
 
-        <Col span={8}> 
+
+          <Row gutter={[16,16]}
+               style={{marginTop:25}}  
+          >
+        <Col xs={{span:12, offset:8}} sm={{span: 12, offset:6}}> 
          
             <Card
-              style={{ width: 300 }}
-              span={8}
+              style={{ backgroundColor: '#0388a6' }}
+              
               cover={
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src={p6}
                 />
               }
               actions={[
-                <a href="https://github.com/RSimer">
+                <a href="https://github.com/RSimer/P6MRDb">
                 <GithubOutlined key="github" type="link" >
                 </GithubOutlined>
                 </a>,
-                <a href="">
+                <a href="https://rsimer.github.io/P6MRDb/">
                 <LinkOutlined key="link" href=""/>
                 </a>
               ]}
             >
               <Meta
                 
-                title="Card title"
-                description="This is the description"
+                title="P6MRDb"
+                description="This application allows the user to see reviews for their favorite movies"
               />
             </Card>
 
@@ -78,60 +91,65 @@ export function ProjectList() {
       </Row>
 
 
-      <Row gutter={2}
-      style={{marginTop: '100px'}}
+      <Row gutter={[16,16]}
+           style={{marginTop:25}}  
       >
         
-          <Col span={8} offset={6}>
+          <Col xs={{span:12, offset:8}} sm={{span: 12, offset:6}} >
             <Card
-              style={{ width: 300 }}
-              span={8}
+              style={{ backgroundColor: '#0388a6' }}
+              
               cover={
                 <img
-                  alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  alt="screenshot of note taker"
+                  src={notes}
                 />
               }
               actions={[
-                <GithubOutlined key="github" type="link"/>,
-                 
+                <a href="https://github.com/RSimer/Taking-Notes">
+                <GithubOutlined key="github" type="link" >
+                </GithubOutlined>
+                </a>,
+                <a href="https://taking-notes76.herokuapp.com/">
                 <LinkOutlined key="link" href=""/>
+                </a>
               ]}
             >
               <Meta
-                title="Card title"
-                description="This is the description"
+                title="Taking Notes"
+                description="This allows the user to keep track of their thoughts through notes"
               />
             </Card>
           </Col>
-        
+        </Row>
 
-        <Col span={8}>
+        <Row gutter={[0,8]}
+             style={{marginTop:25, marginBottom:50}} 
+        >
+        <Col xs={{span:12, offset:8}} sm={{span: 12, offset:6}}>
         <Card
-              style={{ width: 300 }}
-              span={8}
+              style={{ backgroundColor: '#0388a6' }}
+              
               cover={
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src={fitness}
                 />
               }
               actions={[
+                <a href="https://github.com/RSimer/Workout-tracker">
                 <GithubOutlined key="github" type="link" >
-                  <Tag>
-                    <a href="https://mail.google.com/mail/u/0/#inbox">
-
-                    </a>
-                    
-                  </Tag>
-                </GithubOutlined>,
+                </GithubOutlined>
+                </a>,
+                <a href="https://fitness-tracker2323.herokuapp.com/">
                 <LinkOutlined key="link" href=""/>
+                </a>
               ]}
             >
               <Meta
                 
-                title="Card title"
-                description="This is the description"
+                title="Fitness Tracker"
+                description="This application allows the user to stay fit by tracking the workout"
               />
             </Card>
         </Col>

@@ -7,20 +7,22 @@ export function Footer(){
 
     return(
         <div>
-            <Row span={8}>
-                <Col span={8}>
+            <Row style={{marginTop:25}}>
+                <Col offset={11}>
                 <a href = "https://github.com/RSimer">
                     <GithubOutlined
-                    height={50}
+                    style={{fontSize: '30px', marginTop: 25, marginRight:15}}
                     />
                 </a>
-
-                <a href=''>
-                    <LinkedinOutlined />
+                </Col>
+                <Col>
+                <a href='https://www.linkedin.com/in/rob-simanton-0098/'>
+                    <LinkedinOutlined style={{fontSize: '30px', marginTop: 25}}/>
                 </a>
-
-                <a href=''>
-                    <InstagramOutlined />
+                </Col>
+                <Col>
+                <a href='https://www.instagram.com/rob.simanton/'>
+                    <InstagramOutlined style={{fontSize: '30px', marginTop: 25, marginLeft: 15}} />
                 </a>
 
                 </Col>
