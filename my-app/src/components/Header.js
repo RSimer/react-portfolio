@@ -27,7 +27,7 @@ export function Sider() {
       <SubMenu key="sub1"  title="">
       <Menu.Item key="1"> <Link to = "/about"> About Me </Link> </Menu.Item>
       <Menu.Item key="2"> <Link to = "/projectList"> Projects </Link> </Menu.Item>
-      <Menu.Item key="3">Contact Me</Menu.Item>
+      <Menu.Item key="3"> <Link to = '/contact'> Contact Me </Link> </Menu.Item>
       <Menu.Item key="4">Resume</Menu.Item>
     </SubMenu>
   </Menu>

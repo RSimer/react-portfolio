@@ -1,4 +1,4 @@
-import { Col, Image } from "antd";
+import { Col, Image,Row } from "antd";
 import React from "react";
 import pfp from './images/pfp.jpg'
 
@@ -7,10 +7,13 @@ export function AboutMe(){
     return(
 
         <div>
-            <Col >
-            <Image
-            height={400}
-            width={300}
+            <Row>
+            <Col sm={{width:300,heigh:200}} md={{height:200,width:200}}>
+            <Image 
+         
+           
+            
+            span={8}
              src={pfp}
              alt='profile picture of self in desert, cactus in background'
               />
@@ -18,7 +21,7 @@ export function AboutMe(){
             </Col>
             <Col
             span={12}
-            offset={10}
+            offset={8}
             
             >
 
@@ -31,7 +34,7 @@ export function AboutMe(){
 
             </Col>
 
-            
+            </Row>
         </div>
     );
 

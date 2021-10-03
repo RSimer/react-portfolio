@@ -16,7 +16,7 @@ import {Footer} from "./components/Footer";
 import {AboutMe} from "./components/AboutMe";
 import { ProjectList } from "./components/ProjectList";
 // import {Resume} from "./components/Resume";
-// import {Contact} from "./components/Contact";
+import {Contact} from "./components/Contact";
 
 
  function App(){
@@ -35,6 +35,12 @@ import { ProjectList } from "./components/ProjectList";
         <Route exact path={"/projectList"}>
           <div className="project">
           <ProjectList style={{alignContent: 'center'}}/>
+          </div>
+        </Route>
+
+        <Route exact path={"/contact"}>
+          <div className="contact">
+          <Contact style={{alignContent: 'center'}}/>
           </div>
         </Route>
         
