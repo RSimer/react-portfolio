@@ -10,6 +10,8 @@ export function AboutMe(){
             <Row>
             <Col sm={{width:300,heigh:200}} md={{height:200,width:200}}>
             <Image 
+            width={300}
+            height={200}
          
            
             
