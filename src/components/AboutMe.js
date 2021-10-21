@@ -8,7 +8,7 @@ export function AboutMe(){
 
         <div>
             <Row>
-            <Col sm={{width:300,heigh:200}} md={{height:200,width:200}}>
+            <Col >
             <Image 
             width={300}
             height={200}
