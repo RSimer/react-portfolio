@@ -48,9 +48,9 @@ import {Contact} from "./components/Contact";
 
       
 
-        <div className='footer'>
+        <footer className='footer'>
         <Footer/>
-        </div>
+        </footer>
         
       </div>
   </Switch>
