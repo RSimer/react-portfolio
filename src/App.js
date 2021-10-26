@@ -28,7 +28,7 @@ import {Contact} from "./components/Contact";
         <Sider/>
         </div>
 
-        <Route exact path={["/","/about"]}>
+        <Route exact path={["/react-portfolio/","/about"]}>
           <AboutMe/>
         </Route>
 

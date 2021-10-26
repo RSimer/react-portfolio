@@ -8,13 +8,10 @@ export function AboutMe(){
 
         <div>
             <Row>
-            <Col >
+            <Col offset={8}>
             <Image 
-            width={300}
-            height={200}
-         
-           
-            
+            width={350}
+            height={550}
             span={8}
              src={pfp}
              alt='profile picture of self in desert, cactus in background'

@@ -23,6 +23,7 @@
 .footer{
     height: 100px;
     background-color: var(--orange);
+    align-self: baseline;
     align-content: center;
     
 }
